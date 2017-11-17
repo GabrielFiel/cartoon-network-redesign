@@ -1,0 +1,106 @@
+@font-face {
+    font-family: CN;
+    src: url(fonts/cn-bold.ttf);
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(fonts/whitney.ttf);
+}
+
+body{
+	font-family: "CN", sans-serif;
+}
+
+/* Helpers */
+
+.no-margin{
+	margin: 0 !important;
+}
+
+.no-padding{
+	padding: 0 !important;
+}
+
+/*  Cores */
+
+.azul{
+	background-color: #009ade;
+}
+
+.amarelo{
+	background-color: #ffea00;
+}
+
+.rosa{
+	background-color: #ec0080;
+}
+
+.cinza{
+	background-color: #4c4c4c;
+}
+
+a{
+	color: inherit;
+}
+
+nav{
+	height: 100px;
+	line-height: inherit;
+}
+
+.publicidade{
+	height: 100%;
+}
+
+.mais-info-botao{
+	width: 19px;
+	height: 19px;
+	border-radius: 2px;
+	font-size: 25px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.mais-info-botao span{
+	line-height: 19px;
+}
+
+.horario-nav{
+	font-size: 40px;
+}
+
+.sub-nav{
+	height: 40px;
+}
+
+.logo-nav{
+	height: 120%;
+}
+
+.pesquisar{
+	height: 32px;
+	margin-top: 4px;
+	width: 300px;
+	font-family: "Whitney";
+}
+
+.logo-footer{
+	height: 70px;
+}
+
+.footer{
+	padding: 10px 0;
+	font-family: "Whitney";
+}
+
+.sub-footer{
+	padding: 5px 0;
+}
+
+.sub-footer a {
+	margin: 0 19px;
+	white-space: nowrap;
+}
