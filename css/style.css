@@ -4,16 +4,21 @@
 
 @font-face {
     font-family: CN;
-    src: url(fonts/cn-bold.ttf);
+    src: url(../fonts/cn-bold.ttf);
 }
 
 @font-face {
     font-family: Whitney;
-    src: url(fonts/whitney.ttf);
+    src: url(../fonts/whitney.ttf);
 }
 
 body{
 	font-family: "CN", sans-serif;
+}
+
+@media only screen and (min-width: 993px){
+  .container {
+    width: 95%;}
 }
 
 /* =========================
@@ -54,6 +59,10 @@ body{
 
 a{
 	color: inherit;
+}
+
+td{
+	padding: 0 !important;
 }
 
 nav{
@@ -120,4 +129,41 @@ nav{
 .sub-footer a {
 	margin: 0 19px;
 	white-space: nowrap;
+}
+
+/* =========================
+		  Conteúdo 
+========================= */
+
+.dia-programacao{
+	border-top: solid 5px #ffea00;
+	padding: 8px 15px;
+	margin-top: 20px;
+}
+
+.tiles-programacao{
+	width: 780px;
+}
+
+.tile{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	margin: 3px;
+	font-size: 35px;
+	opacity: .8;
+	transition: .5s all;
+}
+
+.tiles-programacao {
+    font-size: 0;
+}
+
+.tile span{
+	line-height: 150px;
+	color: white;
+}
+
+.tile:hover{
+	opacity: 1;
 }
