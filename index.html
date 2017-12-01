@@ -4,6 +4,8 @@
 	<title>Programação - Cartoon Network</title>
 	<!-- Framework Materialize CSS -->
 	<link rel="stylesheet" href="css/materialize.min.css">
+	<!-- Icones -->
+	<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 	<!-- Syle CSS -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -53,11 +55,67 @@
 		<div class="row">
 			<div class="col l7 no-padding">
 				<div class="tiles-programacao no-margin">
-					<a href="#"><div class="tile center rosa"><span>00 h</span></div></a>
-					<a href="#"><div class="tile center rosa"><span>00 h</span></div></a>
-					<a href="#"><div class="tile center rosa"><span>00 h</span></div></a>
-					<a href="#"><div class="tile center rosa"><span>00 h</span></div></a>
+					<a href="#" rel="b" data-mensagem="
+						
+					<div class='azul center sidebar-horario'> 
+						<div class='row no-margin'>
+							<h1 class='white-text'>00h</h1>
+						</div>
+						<div class='row no-margin'>
+							<div class='white card-horario'>
+								<div class=' col l2'>
+									<span class='horario-vertical'>10:00</span>
+								</div>
+								<div class='col l4'>
+									<img class='card-imagem' src='img/jake.png'>
+								</div>
+								<div class='col l6'>
+									<span class='card-texto'>Hora de Aventura</span>
+								</div>
+							</div>
+						</div>
+							
+					
+					</div>
+
+
+					"><div class="tile center azul"><span>00h</span></div></a>
+
+
+
+
+
+					<a href="#" rel="b" data-mensagem="teste1"><div class="tile center rosa"><span>01h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste2"><div class="tile center amarelo"><span>02h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste3"><div class="tile center azul"><span>03h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste4"><div class="tile center rosa"><span>04h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste"><div class="tile center amarelo"><span>05h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste1"><div class="tile center azul"><span>06h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste2"><div class="tile center rosa"><span>07h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste3"><div class="tile center amarelo"><span>08h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste4"><div class="tile center azul"><span>09h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste"><div class="tile center rosa"><span>10h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste1"><div class="tile center amarelo"><span>11h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste2"><div class="tile center azul"><span>12h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste3"><div class="tile center rosa"><span>13h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste4"><div class="tile center amarelo"><span>14h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste"><div class="tile center azul"><span>15h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste1"><div class="tile center rosa"><span>16h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste2"><div class="tile center amarelo"><span>17h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste3"><div class="tile center azul"><span>18h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste4"><div class="tile center rosa"><span>19h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste"><div class="tile center amarelo"><span>20h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste1"><div class="tile center azul"><span>21h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste2"><div class="tile center rosa"><span>22h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste3"><div class="tile center amarelo"><span>23h</span></div></a>
+					<a href="#" rel="b" data-mensagem="teste4"><div class="tile center absolute"><i class="mdi mdi-chevron-right black-text seta"></i></div></a>
 				</div>			
+			</div>
+
+			<div class="col l5">
+				<div class="alvo" id="b">
+					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -94,5 +152,19 @@
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	
+
+$("a").on("click", function(){
+  
+  $("#" + $(this).attr("rel")).html($(this).attr("data-mensagem"));
+});
+
+$(".limpar").on("click", function(){
+  
+  $("#" + $(this).attr("rel")).empty();
+});
+</script>
 </body>
 </html>

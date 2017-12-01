@@ -33,6 +33,10 @@ body{
 	padding: 0 !important;
 }
 
+.absolute{
+	position: absolute;
+}
+
 /* =========================
 			Cores 
 ========================= */
@@ -51,6 +55,10 @@ body{
 
 .cinza{
 	background-color: #4c4c4c;
+}
+
+.texto-cinza{
+	color: #4c4c4c;
 }
 
 /* =========================
@@ -151,7 +159,7 @@ nav{
 	display: inline-block;
 	margin: 3px;
 	font-size: 35px;
-	opacity: .8;
+	opacity: .7;
 	transition: .5s all;
 }
 
@@ -166,4 +174,50 @@ nav{
 
 .tile:hover{
 	opacity: 1;
+}
+
+.seta{
+	color: #aaa !important;
+	font-size: 105px;
+}
+
+.seta:hover{
+	color: black !important;
+}
+
+.sidebar-horario{
+	margin-left: 40px;
+}
+
+.sidebar-horario h1{
+	padding: 15px 0;
+	margin: 0;
+}
+
+.card-horario{
+	margin: 10px;
+	background-color: red;
+	height: 100px;
+}
+
+.card-horario:hover{
+	background-color: #fffdc7 !important;
+}
+
+.horario-vertical{
+	transform: rotate(-90deg);
+	color: #4c4c4c;
+	font-size: 38px;
+	line-height: 100px;
+    float: right;
+}
+
+.card-imagem{
+	height: 95px;
+}
+
+.card-texto{
+	line-height: 100px;
+	font-family: 'Whitney', sans-serif;
+	font-size: 22px;
 }
