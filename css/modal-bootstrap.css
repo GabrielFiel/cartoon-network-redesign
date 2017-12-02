@@ -30,6 +30,7 @@
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
+  top:25vh;
 }
 .modal-open .modals { 
   overflow-x: hidden;
@@ -43,8 +44,6 @@
 .modal-content {
   position: relative;
   background-color: #009ade;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   outline: 0;
 }
@@ -66,12 +65,12 @@
   filter: alpha(opacity=50);
 }
 .modal-header {
-  padding: 15px;
+  padding: 20px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857143px;
+  min-height: 25px;
 }
 .modal-header .close {
-  margin-top: -2px;
+  margin-top: -15px;
 }
 .modal-title {
   margin: 0;
@@ -80,10 +79,10 @@
 .modal-body {
   position: relative;
   padding: 15px;
+  background-color: #ffea00;
 }
 .modal-footer {
-  padding: 15px;
-  text-align: right;
+  padding: 15px 0;
   border-top: 1px solid #e5e5e5;
 }
 .modal-footer .btn + .btn {
@@ -115,8 +114,8 @@
 }
 button.close {
   -webkit-appearance: none;
-    padding: 3px 5px;
-  border-radius: 4px;
+  padding: 1px 6px;
+  border-radius: 6px;
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -127,7 +126,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 750px;
     margin: 30px auto;
   }
   .modal-sm {

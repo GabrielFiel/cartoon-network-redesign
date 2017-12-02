@@ -42,23 +42,23 @@ body{
 ========================= */
 
 .azul{
-	background-color: #009ade;
+	background-color: #009ade !important;
 }
 
 .amarelo{
-	background-color: #ffea00;
+	background-color: #ffea00 !important;
 }
 
 .rosa{
-	background-color: #ec0080;
+	background-color: #ec0080 !important;
 }
 
 .cinza{
-	background-color: #4c4c4c;
+	background-color: #4c4c4c !important;
 }
 
 .texto-cinza{
-	color: #4c4c4c;
+	color: #4c4c4c !important;
 }
 
 /* =========================
@@ -106,7 +106,7 @@ nav{
 }
 
 .logo-nav{
-	height: 100%;
+	height: 50px;
 }
 
 .pesquisar{
@@ -220,4 +220,113 @@ nav{
 	line-height: 100px;
 	font-family: 'Whitney', sans-serif;
 	font-size: 22px;
+	word-wrap: break-word;
+}
+
+.classificacao{
+	padding: 10px 15px;
+	border: 3px solid white;
+	border-radius: 5px;
+	color: white;
+	font-size: 30px;
+	font-family: 'Whitney';
+}
+
+.titulo-desenho{
+	padding: 10px 0;
+}
+
+.titulo-desenho .imagem{
+	height: 100px;
+	width: 100px;	
+	border: 10px solid #ec0080;
+	border-radius: 500px;
+	background-color: white;
+	overflow: hidden;
+	position: absolute;
+	display: inline-block;
+	margin-left: -20px;
+}
+
+.info .titulo-desenho .imagem{
+	border-color: #009ade;
+}
+
+.titulo-desenho .imagem img{
+	width: 70px;	
+}
+
+.titulo-desenho span{
+	font-family: 'Whitney';
+}
+
+.titulo-desenho h5{
+	margin: 5px;
+}
+
+.titulo-desenho .texto{
+margin-left: 100px;
+}
+
+.dias{
+	width: 14.2%;
+	background-color: white;
+	display: inline-block;
+	font-family: 'Whitney';
+	text-align: center;
+	border: 3px solid #009ade;
+	color: #ec0080;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+.info .dias{
+	border-color: #ec0080;
+}
+
+.info .modal-footer{
+	font-family: 'Whitney';
+}
+
+.info .modal-footer span{
+	display: block;
+	padding: 15px;
+}
+
+.info span{
+	color: white;
+}
+
+.horario{
+	color: #ffea00;
+}
+
+.slider-wrapper{
+	background-color: #ec0080;
+	border-bottom: 20px solid #009ade;
+}
+
+/* the slides */
+.slick-slide img{
+    height: 180px !important;
+}
+
+.slider{
+	height: 180px !important;
+}
+
+/* the slides */
+.slick-slide img{
+    margin: 0 100px;
+}
+/* the parent */
+.slick-list>img{
+	top: -30px;
+    margin: 0 -100px;
+    padding: 0 50px !important;
+    display: inline;
+}
+
+.divider{
+	border: 3px solid #ffea00;
 }
